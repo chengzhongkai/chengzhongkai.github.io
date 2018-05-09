@@ -3,7 +3,7 @@
 [link](http://www.i.u-tokyo.ac.jp/edu/entra/examarchive.shtml)
 
 ## Problem 1 
-Suppose that three-dimensional vectors ${\begin{pmatrix}x_{n} \\y_{n}\\z_{n}\end{pmatrix} }$ satisfy the equation 
+Suppose that three-dimensional vectors $${\begin{pmatrix}x_{n} \\y_{n}\\z_{n}\end{pmatrix} }$$ satisfy the equation 
 $$\begin{pmatrix}x_{n+1} \\y_{n+1}\\z_{n+1}\end{pmatrix} =A\begin{pmatrix}x_{n} \\y_{n}\\z_{n}\end{pmatrix} (n=0,1,2,...)$$
 where $x_0, y_0, z_0$ and a are real numbers, and
 $$ A=\begin{pmatrix}1-2α & α & α \\α & 1-α & 0\\α&0&1-α\end{pmatrix} , 0<α<\frac{1}{3} $$
@@ -11,9 +11,9 @@ Answer the following questions.
 (1)	Express $x_n+ y_n+ z_n$ using $x_0, y_0$ and $z_0$ .  
 (2)	Obtain the eigenvalues $\lambda_1$, $\lambda_2$ and $\lambda_3$, and their corresponding eigenvectors $v_1$, $v_2$ and $v_3$of the matrix A.  
 (3)	Express the matrix A using $\lambda_1$, $\lambda_2$ and $\lambda_3$,$v_1$, $v_2$ and $v_3$.  
-(4)	Express $ \begin{pmatrix}x_{n} \\y_{n}\\z_{n}\end{pmatrix} $ using $x_0, y_0$ ,$z_0$ and $\alpha$.  
-(5) Obtain $\lim_{n \rightarrow  \infty } \begin{pmatrix}x_{n} \\y_{n}\\z_{n}\end{pmatrix}$ .  
-(6) Regard $f(x_0,y_0,z_0)=\frac{(x_n,y_n,z_n)\begin{pmatrix}x_{n+1} \\y_{n+1}\\z_{n+1}\end{pmatrix} }{(x_n,y_n,z_n)\begin{pmatrix}x_{n} \\y_{n}\\z_{n}\end{pmatrix} }$ as a function of $x_0$, $y_0$ and $z_0$.  
+(4)	Express $$ \begin{pmatrix}x_{n} \\y_{n}\\z_{n}\end{pmatrix} $$ using $x_0, y_0$ ,$z_0$ and $\alpha$.  
+(5) Obtain $$\lim_{n \rightarrow  \infty } \begin{pmatrix}x_{n} \\y_{n}\\z_{n}\end{pmatrix}$$ .  
+(6) Regard $$f(x_0,y_0,z_0)=\frac{(x_n,y_n,z_n)\begin{pmatrix}x_{n+1} \\y_{n+1}\\z_{n+1}\end{pmatrix} }{(x_n,y_n,z_n)\begin{pmatrix}x_{n} \\y_{n}\\z_{n}\end{pmatrix} }$$ as a function of $x_0$, $y_0$ and $z_0$.  
 Obtain the maximum and the minimum values of $f(x_0,y_0,z_0)$, where we assume that $x_0^2+y_0^2+z_0^2 \neq 0$. 
 ## Solution 1
 (1)
