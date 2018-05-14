@@ -1,3 +1,4 @@
+<script src="./matrix.js" type="text/javascript"></script>
 # What is linalg.js
 
 linalg.js is a linear algebra library for javascript. It is based on Typed Arrays, so you can have fast interop with, for example, WebGL code that uses Typed Arrays.
