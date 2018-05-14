@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="github-markdown.css">
+    <link rel="stylesheet" href="hljs_default.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="marked.js"></script>
+    <!-- script src="marked_tex.js"></script -->
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      skipStartupTypeset: false, 
+      extensions: ["tex2jax.js"],
+      jax: ["input/TeX", "output/HTML-CSS"],
+      tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+        displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+        processEscapes: true
+      },
+      "HTML-CSS": {
+        availableFonts: ["TeX"]
+      }
+    });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+    <script src="./highlight.pack.js"></script>
+    <script src="./matrix.js" type="text/javascript"></script>
+
+    <script>
+            $(document).ready(function(){
+                var target = $("#markdown_content");
+
+                $.ajax({
+                    url: target[0].attributes["src"].value,
+                }).success(function(data){
+                    target.append(marked(data));
+                    $('pre code').each(function(i, block) {
+    					hljs.highlightBlock(block);
+  					});
+
+                }).error(function(data){
+                    target.append("This content failed to load.");
+                });
+            });
+    </script>
+  </head>
+  <body>
+  When $a \ne 0$, there are two solutions to (ax^2 + bx + c = 0) and they are
+  <script type="math/tex">x = {-b \pm \sqrt{b^2-4ac} \over 2a}.</script>
+  <!-- Content -->
+        <div class="container">
+            <div id="markdown_content" src="./readme.md"> </div>
+        </div>
+  </body>
+</html>
