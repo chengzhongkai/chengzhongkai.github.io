@@ -1,2 +1,3 @@
 
-[Latex Math](https://en.wikibooks.org/wiki/LaTeX/Mathematics) samples
+[Latex Math](https://en.wikibooks.org/wiki/LaTeX/Mathematics) samples  
+[jupyter try](http://jupyter.org/try)
