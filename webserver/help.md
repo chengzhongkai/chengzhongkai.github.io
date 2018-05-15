@@ -8,6 +8,7 @@ This site is maked by flask(python). You can get help from [flask site](http://f
 set FLASK_APP=app.py
 flask run
 ```
+> http://localhost:5000/index.html
 
 ## python flask browsing through directory with files
 ```python
