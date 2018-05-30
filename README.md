@@ -1,4 +1,6 @@
 [Link](./links)
+
+[machine learning cheat sheet](./machine_learning_cheat_sheet)
 ## Welcome to GitHub Pages
 
 You can use the [editor on GitHub](https://github.com/chengzhongkai/chengzhongkai.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
