@@ -4,13 +4,13 @@ We use $x$ to represent an observed data vector. In a supervised problem, we use
 
 
 Symbol|Meaning
-
+--|--
 $C$ | Number of classes
 $D$ | Dimensionality of data vector (number of features)
 $N$ | Number of data cases
 $N_c$ | Number of examples of class $c$,$N_c=\sum_{i=1}^{N}\mathbb{I}(y_i=c)$
 $R$ | Number of outputs (response variables)
-$\mathcal{D}$ | Training data $\mathcal{D}=\left\{({x}_i,y_i) | i=1:N\right\}$
+$\mathcal{D}$ | Training data $\mathcal{D}=\left\{({x}_i,y_i) \vert i=1:N\right\}$
 $\mathcal{D}_{test}$ | Test data
 $\mathcal{X}$ | Input space
 $\mathcal{Y}$ | Output space
