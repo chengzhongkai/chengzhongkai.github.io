@@ -21,7 +21,7 @@ $\mathcal{H}$ | Hypothesis space
 $L$ | Loss function 
 $J({\theta})$ | Cost function
 $f({x})$ | Decision function
-$P(y|{x})$ | Conditional probability
+$P(y\vert x)$ | Conditional probability
 $\lambda$ | Strength of $\ell_2$ or $\ell_1 regularizer$
 $\phi(x)$ | Basis function expansion of feature vector ${x}$
 $\Phi$ | Basis function expansion of design matrix ${X}$
@@ -32,18 +32,18 @@ $T(\mathcal{D})$ | Test statistic for data
 ${T}$ | Transition matrix of Markov chain
 ${\theta}$ | Parameter vector
 ${\theta}^{(s)}$ | $s$'th sample of parameter vector
-$\hat{{\theta}}$ | Estimate (usually MLE or MAP) of ${\theta}$
-$\hat{{\theta}}_{MLE}$ | Maximum likelihood estimate of ${\theta}$
-$\hat{{\theta}}_{MAP}$ | MAP estimate of ${\theta}$
-$\bar{{\theta}}$ | Estimate (usually posterior mean) of  ${\theta}$
+$\hat{\theta}$ | Estimate (usually MLE or MAP) of ${\theta}$
+$\hat{\theta}_{MLE}$ | Maximum likelihood estimate of ${\theta}$
+$\hat{\theta}_{MAP}$ | MAP estimate of ${\theta}$
+$\bar{\theta}$ | Estimate (usually posterior mean) of  ${\theta}$
 ${w}$ | Vector of regression weights (called ${\beta}$ in statistics)
 b | intercept (called $\varepsilon$ in statistics)
 ${W}$ | Matrix of regression weights
 $x_{ij}$ | Component (i.e., feature) $j$ of data case $i$ ,for $i=1:N ,j=1:D$
 ${x}_i$ | Training case, $i=1:N$
 ${X}$ | Design matrix of size $N \times D$
-$\bar{{x}}$ | Empirical mean $\bar{{x}}=\dfrac{1}{N}\sum_{i=1}^{N} {x}_i$
-$\tilde{{x}}$ | Future test case
+$\bar{x}$ | Empirical mean $\bar{{x}}=\dfrac{1}{N}\sum_{i=1}^{N} {x}_i$
+$\tilde{x}$ | Future test case
 ${x}_*$ | Feature test case
 ${y}$ | Vector of all training labels ${y} =(y_1,...,y_N)$
 $z_{ij}$ | Latent component $j$ for case $i$
