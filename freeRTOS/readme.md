@@ -6,7 +6,7 @@
 提供了关于可使小型、低功率的边缘设备易于编程、部署、保护和维护的微控制器操作系统的详细信息。  
 Provides detailed information about the microcontroller operating system that makes small, low-powered edge devices easy to program, deploy, secure, and maintain.
 
-## [FreeRTOS 内核参考手册](https://docs.aws.amazon.com/freertos-kernel/latest/ref/welcome.html)
+## [FreeRTOS 内核参考手册](./kernel) [_Ref_](https://docs.aws.amazon.com/freertos-kernel/latest/ref/welcome.html)
 
 介绍了可用于创建信号、软件计时器、新任务实例等的常量及任务和计划程序的 API 函数。
 
