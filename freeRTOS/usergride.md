@@ -56,3 +56,8 @@ Before you begin, you need an AWS account, an IAM user with permission to access
 # Amazon FreeRTOS Developer Guide
 # Amazon FreeRTOS Demo Projects
 # Amazon FreeRTOS Porting Guide
+<script>
+$("body").append("<ul id='toc' style='top: 0px; position: fixed;right:10px'>");
+$("#toc").css('float','right');
+$("h1").each(function(){$("#toc").append("<li><a href='#"+$(this).attr('id')+"'>"+$(this).text()+"</a></li>")});
+</script>
