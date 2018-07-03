@@ -11,9 +11,10 @@ Provides detailed information about the microcontroller operating system that ma
 介绍了可用于创建信号、软件计时器、新任务实例等的常量及任务和计划程序的 API 函数。  
 Describes constants and task and scheduler API functions that are used to create semaphores, software timers, new instances of tasks, and more.  
 
-## [FreeRTOS 内核开发人员指南](https://docs.aws.amazon.com/freertos-kernel/latest/dg/about.html)
+## [FreeRTOS 内核开发人员指南](./DeveloperGuide) [_Ref_](https://docs.aws.amazon.com/freertos-kernel/latest/dg/about.html)
 
-提供了关于在管理堆、队列、任务、中断、软件计时器等时使用的 FreeRTOS 概念和 API 函数的详细信息。
+提供了关于在管理堆、队列、任务、中断、软件计时器等时使用的 FreeRTOS 概念和 API 函数的详细信息。  
+Provides detailed information about FreeRTOS concepts and API functions used in the management of heaps, queues, tasks, interrupts, software timers, and more.  
 
 ## [Amazon FreeRTOS API 参考](https://docs.aws.amazon.com/freertos/latest/lib-ref/)
 
