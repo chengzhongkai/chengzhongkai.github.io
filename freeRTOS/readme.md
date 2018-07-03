@@ -8,7 +8,8 @@ Provides detailed information about the microcontroller operating system that ma
 
 ## [FreeRTOS 内核参考手册](./kernel) [_Ref_](https://docs.aws.amazon.com/freertos-kernel/latest/ref/welcome.html)
 
-介绍了可用于创建信号、软件计时器、新任务实例等的常量及任务和计划程序的 API 函数。
+介绍了可用于创建信号、软件计时器、新任务实例等的常量及任务和计划程序的 API 函数。  
+Describes constants and task and scheduler API functions that are used to create semaphores, software timers, new instances of tasks, and more.  
 
 ## [FreeRTOS 内核开发人员指南](https://docs.aws.amazon.com/freertos-kernel/latest/dg/about.html)
 
