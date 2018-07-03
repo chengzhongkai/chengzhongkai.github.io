@@ -46,6 +46,13 @@ For more information about OTA updates, see:
 The Amazon FreeRTOS Qualification Program (Amazon FQP) is for microcontroller vendors who want to qualify their microcontroller-based hardware on Amazon FreeRTOS. The goal of Amazon FQP is to ensure that developers can use Amazon FreeRTOS on their choice of microcontroller-based hardware. In order to deliver a consistent experience for developers, the Amazon FQP outlines a set of security, functionality, and performance requirements that all microcontrollers (and the associated hardware abstraction layers and drivers) must meet.
 
 # Getting Started with Amazon FreeRTOS
+This section shows you how to download and configure Amazon FreeRTOS and run a demo application on one of the qualified microcontroller boards. In this tutorial, we assume you are familiar with AWS IoT and the AWS IoT console. If not, we recommend that you start with the AWS IoT Getting Started tutorial.  
+
+## Prerequisites
+Before you begin, you need an AWS account, an IAM user with permission to access AWS IoT and Amazon FreeRTOS, and one of the supported hardware platforms.  
+
+### AWS Account and Permissions
+
 # Amazon FreeRTOS Developer Guide
 # Amazon FreeRTOS Demo Projects
 # Amazon FreeRTOS Porting Guide
