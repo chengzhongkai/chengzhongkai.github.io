@@ -1,7 +1,7 @@
 # [Amazon FreeRTOS 文档](https://aws.amazon.com/cn/documentation/freertos/)
 
 
-## [Amazon FreeRTOS 用户指南](./freeRTOS/usergride) [_Ref_](https://docs.aws.amazon.com/freertos/latest/userguide/)
+## [Amazon FreeRTOS 用户指南](./usergride) [_Ref_](https://docs.aws.amazon.com/freertos/latest/userguide/)
 
 提供了关于可使小型、低功率的边缘设备易于编程、部署、保护和维护的微控制器操作系统的详细信息。  
 Provides detailed information about the microcontroller operating system that makes small, low-powered edge devices easy to program, deploy, secure, and maintain.
