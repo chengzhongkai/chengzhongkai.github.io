@@ -8,8 +8,8 @@ import serial
 import sys
 from serial.tools.list_ports import comports
 import logging
-
-
+import signal
+signal.signal(signal.SIGINT, signal.SIG_DFL)
 
 def handle_data(data):
     print(data)
@@ -29,7 +29,6 @@ def write_to_port(ser,logger):
     time.sleep(3)
 
 def main():
-
   # define args
   parser = argparse.ArgumentParser()
   parser.add_argument('com',type=str)
