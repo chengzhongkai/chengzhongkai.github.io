@@ -16,11 +16,11 @@ def handle_data(data):
 
 def read_from_port(ser,logger):
   while True:
-    reading = ser.readline().decode()
+    reading = ser.read_until('\r').decode()
     if len(reading) >0 :
       sys.stdout.write(reading)
       sys.stdout.flush()
-      logger.info(ser.name+":"+reading)
+      logger.info(ser.name+":"+reading.replace('\r', '\\r').replace('\n', '\\n'))
     #handle_data(reading)
 
 def write_to_port(ser,logger):
@@ -29,6 +29,7 @@ def write_to_port(ser,logger):
     time.sleep(3)
 
 def main():
+
   # define args
   parser = argparse.ArgumentParser()
   parser.add_argument('com',type=str)
@@ -48,8 +49,8 @@ def main():
   
   # open uart port
   port = args.com
-  baud = 9600
-  serial_port = serial.Serial(port, baud, timeout=0)
+  baud = 115200
+  serial_port = serial.Serial(port, baud, timeout=0.1)
   
   # create logger
   logger = logging.getLogger(__name__)
@@ -57,8 +58,6 @@ def main():
   logging.basicConfig(filename=args.logfile,level=logging.DEBUG, format=fmt)
   thread = threading.Thread(target=read_from_port, args=(serial_port,logger))
   thread.start()
-  thread2 = threading.Thread(target=write_to_port, args=(serial_port,logger))
-  thread2.start()
 
 if __name__ == "__main__":
     main()
