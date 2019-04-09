@@ -2,7 +2,9 @@
 
 [Link](./links)
 
-[uart Log tools](./uartLog.py)
+[uart Log tools](./uartLog.py)  
+
+[arm semihost logger](./semihostLog.py)  
 
 [machine learning cheat sheet](./machine_learning_cheat_sheet)
 ## Welcome to GitHub Pages
