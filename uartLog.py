@@ -11,6 +11,8 @@ import logging
 import signal
 signal.signal(signal.SIGINT, signal.SIG_DFL)
 
+
+
 def handle_data(data):
     print(data)
 
@@ -32,8 +34,9 @@ def main():
 
   # define args
   parser = argparse.ArgumentParser()
-  parser.add_argument('com',type=str)
+  parser.add_argument('com',type=str, nargs='+')
   parser.add_argument('-l', "--logfile", type=str, default='uartLog.log')
+  parser.add_argument('-b', "--baudrate", type=int, default=115200)
   args = parser.parse_args()
 
   # check args
@@ -42,22 +45,26 @@ def main():
   for n, (port, desc, hwid) in enumerate(sorted(comports()), 1):
     #sys.stderr.write('--- {:2}: {:20} {!r}\n'.format(n, port, desc))
     ports.append(port)
-  if not args.com in ports:
-    print(ports)
-    print("com name error.\r\n")
-    exit()
+  print(args.com)
+  for com_i in args.com:
+    if not com_i in ports:
+      print(ports)
+      print("com name error.\r\n")
+      exit()
   
   # open uart port
-  port = args.com
-  baud = 115200
-  serial_port = serial.Serial(port, baud, timeout=0.1)
+  for com_i in args.com:
+    port = com_i
+    baud = args.baudrate
+    serial_port = serial.Serial(port, baud, timeout=0.1)
   
-  # create logger
-  logger = logging.getLogger(__name__)
-  fmt = "%(asctime)s %(levelname)s %(name)s :%(message)s"
-  logging.basicConfig(filename=args.logfile,level=logging.DEBUG, format=fmt)
-  thread = threading.Thread(target=read_from_port, args=(serial_port,logger))
-  thread.start()
+    # create logger
+    logger = logging.getLogger(__name__)
+    fmt = "%(asctime)s %(levelname)s %(name)s :%(message)s"
+    logging.basicConfig(filename=args.logfile,level=logging.DEBUG, format=fmt)
+    thread = threading.Thread(target=read_from_port, args=(serial_port,logger))
+    thread.start()
+
 
 if __name__ == "__main__":
     main()
